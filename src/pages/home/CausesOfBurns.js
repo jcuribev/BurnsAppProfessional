@@ -1,5 +1,6 @@
 import { ScrollView, StyleSheet, Text, View } from 'react-native'
 import React, { Component } from 'react'
+import { Row, Table } from 'react-native-table-component';
 
 export class CausesOfBurns extends Component {
     constructor(props) {
@@ -40,8 +41,8 @@ export class CausesOfBurns extends Component {
 
 const styles = StyleSheet.create({
     container: { flex: 1, padding: 16, paddingTop: 30, backgroundColor: '#fff' },
-    head: { height: 'auto', width: 1400, backgroundColor: '#f1f8ff', },
-    cell: { width: 700 },
+    head: { height: 'auto', width: 360, backgroundColor: '#f1f8ff', },
+    cell: { width: 360 },
     text: { margin: 6, color: 'black' },
     headerText: { margin: 6, color: 'black', fontWeight: 'bold'}
 });

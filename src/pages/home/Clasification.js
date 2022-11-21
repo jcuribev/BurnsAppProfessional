@@ -1,6 +1,7 @@
 import { ScrollView, StyleSheet, Text, View } from 'react-native'
 import React, { Component } from 'react'
 import { Col, Row, Rows, Table, TableWrapper } from 'react-native-table-component';
+import { textStyle } from '../../styles/Text';
 
 export class Clasification extends Component {
 

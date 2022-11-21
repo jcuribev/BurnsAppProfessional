@@ -1,6 +1,12 @@
 export const drawerItems = [
 
     {
+        key: 'Introduction',
+        title: 'Introducción',
+        parent: 'Home'
+    },
+
+    {
         key: 'Home',
         title: 'Inicio',
         parent: null,
@@ -34,12 +40,6 @@ export const drawerItems = [
         key: 'About',
         title: 'Acerca de',
         parent: null
-    },
-
-    {
-        key: 'Introduction',
-        title: 'Introducción',
-        parent: 'Home'
     },
 
     {

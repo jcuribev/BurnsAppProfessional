@@ -4,7 +4,6 @@ import { createDrawerNavigator, DrawerContentScrollView, DrawerItem, DrawerItemL
 import { drawerItems, drawerSubItems } from './DrawerItemsMain';
 import CustomDrawer from './CustomDrawer';
 import { TouchableOpacity } from 'react-native-gesture-handler';
-import { Introduction } from '../pages/Introduction';
 import About from '../pages/About';
 import References from '../pages/References';
 import PagesOfInterest from '../pages/PagesOfInterest';
@@ -20,10 +19,10 @@ import Electrotherapy from '../pages/intervention/pain_management/Electrotherapy
 import CausesOfBurns from '../pages/home/CausesOfBurns';
 import Definition from '../pages/home/Definition';
 import Clasification from '../pages/home/Clasification';
-import Home from '../pages/Home';
+import Introduction from '../pages/home/Introduction';
 
 const Map = {
-  "Home": Home,
+  "Home": "Home",
   "Examination": Examination,
   "Intervention": "Intervention",
   "References": References,
@@ -68,7 +67,7 @@ const NavigationDrawer = () => {
           )
         })
       }
-    </Drawer.Navigator >
+    </Drawer.Navigator>
   )
 }
 
