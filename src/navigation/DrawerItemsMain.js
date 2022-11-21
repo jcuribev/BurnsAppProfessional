@@ -61,6 +61,12 @@ export const drawerItems = [
     },
 
     {
+        key: 'Consequences',
+        title: 'Consecuencias de las quemaduras',
+        parent: 'Home'
+    },
+
+    {
         key: 'TherapeuticExercise',
         title: 'Ejercicio terapéutico',
         parent: 'Intervention'
@@ -79,27 +85,15 @@ export const drawerItems = [
     },
 
     {
-        key: 'TherapeuticIntroduction',
-        title: 'Introducción a la terapia',
+        key: 'TherapeuticExerciseIntroduction',
+        title: 'Introducción al ejercicio terapéutico',
         parent: 'TherapeuticExercise'
     },
 
     {
-        key: 'StrengtheningExercises',
-        title: 'Ejercicios de fortalecimiento',
+        key: 'TherapeuticExerciseTypes',
+        title: 'Tipos de ejercicios terapéuticos',
         parent: 'TherapeuticExercise'
-    },
-
-    {
-        key: 'Stretching',
-        title: 'Estiramiento',
-        parent: 'TherapeuticExercise'
-    },
-
-    {
-        key: 'Techniques',
-        title: 'Técnicas deimato funcionales',
-        parent: 'ScarManagement'
     },
 
     {
@@ -107,22 +101,4 @@ export const drawerItems = [
         title: 'Preso-Terapia',
         parent: 'ScarManagement'
     },
-
-    {
-        key: 'PhysicalMeans',
-        title: 'Medios físicos',
-        parent: 'PainManagement'
-    },
-
-    {
-        key: 'VirtualReality',
-        title: 'Uso de la realidad virtual',
-        parent: 'PainManagement'
-    },
-
-    {
-        key: 'Electrotherapy',
-        title: 'Electroterapia',
-        parent: 'PainManagement'
-    }
 ]
