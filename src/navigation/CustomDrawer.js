@@ -59,11 +59,11 @@ const CustomDrawer = (props) => {
         </View>
         <View style={styles.container}>
           {activeItems.map((parent) => (
-            <TouchableHighlight underlayColor={"#dd7100"} style={pressedButton === parent.title ? styles.focusedButton : styles.button} onPress={() => onItemPress(parent)}>
+            <TouchableHighlight key={parent.key} underlayColor={"#dd7100"} style={pressedButton === parent.title ? styles.focusedButton : styles.button} onPress={() => onItemPress(parent)}>
               <Text style={styles.text}>{parent.title}</Text>
             </TouchableHighlight>
           ))}
-          <TouchableHighlight underlayColor={"#dd7100"} style={styles.backButton} onPress={() => returnToPreviousItem(activeItems[0])}>
+          <TouchableHighlight key={"Return"} underlayColor={"#dd7100"} style={styles.backButton} onPress={() => returnToPreviousItem(activeItems[0])}>
             <Text style={styles.text}>{activeItems[0].parent === null ? 'Salir' : 'Volver'}</Text>
           </TouchableHighlight>
         </View>
